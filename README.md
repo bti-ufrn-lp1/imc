@@ -1,7 +1,7 @@
 # IMC
 
-## Descrição
-Este programa realiza o cálculo do **índice de massa corporal (IMC)** de uma pessoa e determinação do seu grau de obesidade. O IMC é uma medida internacional usada para calcular se uma pessoa está no peso ideal, sendo determinado pela divisão da massa do indivíduo (em quilogramas) pelo quadrado de sua altura (em metros), de acordo com a seguinte equaçào: 
+## Sobre
+Este programa realiza o cálculo do **índice de massa corporal - IMC** de uma pessoa e determinação do seu grau de obesidade. O IMC é uma medida internacional usada para calcular se uma pessoa está no peso ideal, sendo determinado pela divisão da massa do indivíduo (em quilogramas) pelo quadrado de sua altura (em metros), de acordo com a seguinte equaçào: 
 
 <img src="https://latex.codecogs.com/svg.latex?IMC=\frac{massa}{altura^2}" />
 
@@ -18,4 +18,35 @@ O valor do IMC é utilizado para classificar o grau de obesidade de um indivídu
 
 ## Implementação
 Este programa foi implementado na linguagem de programação C++, estando organizado da seguinte forma:
-* O arquivo [``imc.cpp``](https://github.com/bti-ufrn-lp1/imc/blob/master/imc.cpp) corresponde à 
+- O arquivo fonte [``imc.cpp``](https://github.com/bti-ufrn-lp1/imc/blob/master/imc.cpp) corresponde à implementação do programa propriamente dito, o qual é composto das seguintes funções:
+     - ``imc``: calcula o IMC de um indivíduo adulto a partir do seu peso e sua altura
+     - ``grau_obesidade``: determina o grau de obesidade de um indivíduo com base em seu IMC
+     - ``main``: função principal do programa
+- O arquivo de configuração [``Doxyfile``](https://github.com/bti-ufrn-lp1/imc/blob/master/Doxyfile) serve de entrada ao [Doxygen](https://www.doxygen.nl/index.html), uma ferramenta para geração automática de documentação de código fonte
+- O diretório [``doc``](https://github.com/bti-ufrn-lp1/imc/tree/master/doc) contém a documentação gerada automaticamente pelo Doxygen como páginas HTML a partir de anotações presentes no código fonte.
+
+## Download, compilação e execução do programa
+No terminal do sistema operacional, insira o seguinte comando para realizar o *download* da implementação a partir deste repositório Git:
+
+```bash
+ git clone https://github.com/bti-ufrn-lp1/imc.git
+```
+
+Em seguida, navegue para o diretório ``imc`` e insira o seguinte comando para compilar o programa:
+
+```bash
+ g++ -W -Wall -pedantic imc.cpp -o imc
+```
+
+O programa ``imc`` requer como entrada dois argumentos numéricos, os quais devem ser fornecidos pelo usuário via linha de comando. O primeiro argumento refere-se ao peso em quilogramas e o segundo à altura (em metros). O programa pode ser executado a partir do terminal do sistema operacional como mostra o seguinte exemplo:
+
+```bash
+ ./imc 65 1.64
+```
+
+Nesse caso, o programa calcula o IMC e determina o grau de obesidade de um indivíduo adulto de 65 quilos e com 1,64 metros de altura. Para essas entradas, o programa exibe a seguinte saída no terminal do sistema operacional:
+
+```bash
+ Índice de massa corporal: 24.1672
+ Grau de obesidade: Indivíduo com peso considerado normal
+```
