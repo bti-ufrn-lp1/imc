@@ -33,11 +33,11 @@ float imc(float peso, float altura) {
 
 /**
  * @brief Função que determina o grau de obesidade de um indivíduo com base em seu IMC
- * @details A classificação do grau de obesidade de um indivíduo adulto é determinada 
+ * @details A classificação do grau de obesidade de um indivíduo adulto é determinada
  *          por uma tabela de referencia internacional com base no IMC
  * @param imc IMC do indivíduo
  * @return Grau de obesidade do indivíduo
- * @sa http://apps.who.int/bmi/index.jsp?introPage=intro_3.html
+ * @sa https://www.euro.who.int/en/health-topics/disease-prevention/nutrition/a-healthy-lifestyle/body-mass-index-bmi
  */
 string grau_obesidade(float imc) {
     if (imc < 18.5) {
@@ -45,13 +45,13 @@ string grau_obesidade(float imc) {
     } else if (imc >= 18.5 && imc < 25) {
         return "Indivíduo com peso considerado normal";
     } else if (imc >= 25 && imc < 30) {
-        return "Indivíduo com sobrepeso";
+        return "Indivíduo com sobrepeso (pré-obesidade)";
     } else if (imc >= 30 && imc < 35) {
-        return "Indivíduo obeso";
+        return "Indivíduo obeso (obesidade classe 1)";
     } else if (imc >= 35 && imc < 40) {
-        return "Indivíduo com obesidade severa";
+        return "Indivíduo com obesidade severa (obesidade classe 2)";
     } else {
-        return "Indivíduo com obesidade morbida";
+        return "Indivíduo com obesidade mórbida (obesidade classe 3)";
     }
 }
 
@@ -75,7 +75,7 @@ int main(int argc, char *argv[]) {
     
     // Calculo do IMC
     float valor_imc = imc(peso, altura);
-    cout << "Indice de massa corporal: " << valor_imc << endl;
+    cout << "Índice de massa corporal (IMC): " << valor_imc << endl;
     
     // Classificacao do grau de obesidade
     cout << "Grau de obesidade: " << grau_obesidade(valor_imc) << endl;
