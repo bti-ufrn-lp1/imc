@@ -26,9 +26,10 @@ Este programa foi implementado na linguagem de programação C++, estando organi
 - O diretório [``doc``](https://github.com/bti-ufrn-lp1/imc/tree/master/doc) contém a documentação gerada automaticamente pelo Doxygen como páginas HTML a partir de anotações presentes no código fonte.
 
 ## Pré-requisitos
-- [Git](https://git-scm.com)
-- Compilador g++
-- [Doxygen](https://www.doxygen.nl/)
+- [Git](https://git-scm.com), para *download* dos arquivos deste repositório
+- Compilador g++, para compilação do programa
+- [Doxygen](https://www.doxygen.nl/), para geração automática de documentação de código fonte
+- [Graphviz](https://www.graphviz.org), para visualização de grafos de dependências na documentação
 
 ## Download, compilação e execução do programa
 No terminal do sistema operacional, insira o seguinte comando para realizar o *download* da implementação a partir deste repositório Git:
