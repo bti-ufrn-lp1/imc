@@ -22,8 +22,13 @@ Este programa foi implementado na linguagem de programação C++, estando organi
      - ``imc``: calcula o IMC de um indivíduo adulto a partir do seu peso e sua altura
      - ``grau_obesidade``: determina o grau de obesidade de um indivíduo com base em seu IMC
      - ``main``: função principal do programa
-- O arquivo de configuração [``Doxyfile``](https://github.com/bti-ufrn-lp1/imc/blob/master/Doxyfile) serve de entrada ao [Doxygen](https://www.doxygen.nl/index.html), uma ferramenta para geração automática de documentação de código fonte
+- O arquivo de configuração [``Doxyfile``](https://github.com/bti-ufrn-lp1/imc/blob/master/Doxyfile) serve de entrada ao [Doxygen](https://www.doxygen.nl/), uma ferramenta para geração automática de documentação de código fonte
 - O diretório [``doc``](https://github.com/bti-ufrn-lp1/imc/tree/master/doc) contém a documentação gerada automaticamente pelo Doxygen como páginas HTML a partir de anotações presentes no código fonte.
+
+## Pré-requisitos
+- [Git](https://git-scm.com)
+- Compilador g++
+- [Doxygen](https://www.doxygen.nl/)
 
 ## Download, compilação e execução do programa
 No terminal do sistema operacional, insira o seguinte comando para realizar o *download* da implementação a partir deste repositório Git:
