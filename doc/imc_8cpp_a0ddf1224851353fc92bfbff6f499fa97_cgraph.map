@@ -1,0 +1,5 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title="Funcao principal." alt="" coords="5,31,56,57"/>
+<area shape="rect" id="node2" href="$imc_8cpp.html#a65c5decdc37492762d726778ef86424c" title="Função que determina o grau de obesidade de um indivíduo com base em seu IMC." alt="" coords="104,5,217,32"/>
+<area shape="rect" id="node3" href="$imc_8cpp.html#a57de03c5072b003ea57c3b403f48c0a7" title="Funcao que calcula o IMC de um indivíduo adulto a partir do seu peso e sua altura." alt="" coords="265,31,308,57"/>
+</map>
